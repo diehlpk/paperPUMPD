@@ -1,0 +1,17 @@
+Source_Path: ../../inp/
+Simulation_Input_File: input_large.yaml
+Filename_To_Read: ../out_large/output
+Output: 
+  Path: ./
+Compute: 
+  Take_U_Plus: true
+  # Calculate_In_Ref_Config: false
+  Sets: 1
+  Set_1: 
+    Tag_Filename: strain_stress
+    Output_Only_Nodes: false
+    Compress_Type: zlib
+    Magnitude_Strain_Tensor: 
+    Strain_Stress: true
+HPX:
+  Partitions: 1
