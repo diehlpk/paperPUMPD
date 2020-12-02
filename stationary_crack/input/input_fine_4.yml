@@ -5,12 +5,12 @@ Model:
     Time: central_difference
   Final_Time: 0.01
   Time_Steps: 100000
-  Horizon: 0.001000
+  Horizon: 0.0005
   Horizon_h_Ratio: 4
 Policy:
   Enable_PostProcessing: true
 Mesh:
-  File: mesh_fine_2.vtu
+  File: mesh_fine_4.vtu
   Keep_Element_Conn: true
 Material:
   Type: RNPBond
@@ -69,7 +69,7 @@ Force_BC:
       Type: constant
       Parameters: [1]
 Output:
-  Path: ../out_large_2/
+  Path: ../out_large_4/
   Tags:
     - Displacement
     - Velocity
