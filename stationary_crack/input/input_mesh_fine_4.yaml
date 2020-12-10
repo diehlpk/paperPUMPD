@@ -3,7 +3,7 @@ Output:
   Mesh: mesh_fine_4
   File_Format: vtu
 Domain: [0.000000e+00, 0.000000e+00, 1.000000e-01, 1.000000e-01]
-Horizon: 0.0005
-Horizon_h_Ratio: 4
+Horizon: 0.001
+Horizon_h_Ratio: 16
 Mesh_Type: uniform_tri
-Compress_Type: zlib
+Compress_Type: none
