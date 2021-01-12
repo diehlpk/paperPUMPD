@@ -69,7 +69,7 @@ Force_BC:
       Type: line_load
       Parameters: [-1]
 Output:
-  Path: out2/
+  Path: /work/diehlpk/PUM/stationary/out2/
   Tags:
     - Displacement
     - Velocity
@@ -79,7 +79,6 @@ Output:
     - Fixity
   Output_Interval: 1000
   Compress_Type: zlib
-  File_Format: legacy_vtk
   Perform_FE_Out: false
 HPX:
   Partitions: 1
