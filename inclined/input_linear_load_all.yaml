@@ -40,7 +40,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - -7e12
+        - -5000000.0
     Spatial_Function:
       Type: line_load
       Parameters: [-1]
@@ -51,7 +51,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - 7e12
+        - 5000000.0
     Spatial_Function:
       Type: line_load
       Parameters: [1]
@@ -62,7 +62,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - -7e12
+        - -5000000.0
     Spatial_Function:
       Type: line_load
       Parameters: [-1]
@@ -73,12 +73,12 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - 7e12
+        - 5000000.0
     Spatial_Function:
       Type: line_load
       Parameters: [1]
 Output:
-  Path: ../out2/
+  Path: out/
   Tags:
     - Displacement
     - Velocity
