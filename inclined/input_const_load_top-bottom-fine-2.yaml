@@ -35,7 +35,7 @@ Force_BC:
   Sets: 2
   Set_1:
     Location:
-      Rectangle: [0, 0, 0.1, 0.002]
+      Rectangle: [0, 0, 0.1, 0.001]
     Direction: [2]
     Time_Function:
       Type: linear
@@ -46,7 +46,7 @@ Force_BC:
       Parameters: [1]
   Set_2:
     Location:
-      Rectangle: [0, 0.098, 0.1, 0.1]
+      Rectangle: [0, 0.099, 0.1, 0.1]
     Direction: [2]
     Time_Function:
       Type: linear
@@ -56,7 +56,7 @@ Force_BC:
       Type: constant
       Parameters: [1]
 Output:
-  Path: out_top_bottom_const/
+  Path: /work/diehlpk/PUM/inclined/out2/
   Tags:
     - Displacement
     - Velocity
