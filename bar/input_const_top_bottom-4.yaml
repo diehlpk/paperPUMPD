@@ -33,7 +33,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - -1.8e12
+        - -3.6e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
@@ -44,12 +44,12 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - 1.8e12
+        - 3.6e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
 Output:
-  Path: out_top_bottom_const-2/
+  Path: out_top_bottom_const-4/
   Tags:
     - Displacement
     - Velocity
