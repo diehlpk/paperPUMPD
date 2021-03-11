@@ -2,7 +2,7 @@ Output:
   Path: .
   Mesh: mesh-2
   File_Format: vtu
-Domain: [0.000000e+00, 0.000000e+00, 1.000000, 1.000000e-01]
+Domain: [1.000000e+00, 0.000000e+00, 2.000000, 1.000000e-01]
 Horizon: 1.000000e-03
 Horizon_h_Ratio: 8
 Mesh_Type: uniform_tri
