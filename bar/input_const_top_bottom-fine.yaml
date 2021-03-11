@@ -49,7 +49,7 @@ Force_BC:
       Type: constant
       Parameters: [1]
 Output:
-  Path: out_top_bottom_const/
+  Path: /work/diehlpk/PUM/bar/out_top_bottom_const-fine/
   Tags:
     - Displacement
     - Velocity
