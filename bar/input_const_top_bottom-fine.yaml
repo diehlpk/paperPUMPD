@@ -28,23 +28,23 @@ Force_BC:
   Sets: 2
   Set_1:
     Location:
-      Rectangle: [0, 0, 0.001, 0.1]
+      Rectangle: [0.9999375, 0, 1.0010625, 0.1]
     Direction: [1]
     Time_Function:
       Type: linear
       Parameters:
-        - -9e12
+        - -1e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
   Set_2:
     Location:
-      Rectangle: [0.999, 0., 1., 0.1]
+      Rectangle: [1.9989375, 0., 2.0000625, 0.1]
     Direction: [1]
     Time_Function:
       Type: linear
       Parameters:
-        - 9e12
+        - 1e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
@@ -55,7 +55,7 @@ Output:
     - Velocity
     - Force
     - Damage_Z
-  Output_Interval: 250
+  Output_Interval: 500
   Compress_Type: zlib
   Perform_FE_Out: true
 HPX:
