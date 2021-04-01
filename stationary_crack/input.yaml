@@ -3,8 +3,8 @@ Model:
   Discretization_Type:
     Spatial: finite_difference
     Time: central_difference
-  Final_Time: 0.01
-  Time_Steps: 100000
+  Final_Time: 0.001
+  Time_Steps: 50000
   Horizon: 0.002000
   Horizon_h_Ratio: 4
 Policy:
@@ -53,7 +53,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - -25000002.5
+        - -1e9
     Spatial_Function:
       Type: constant
       Parameters: [1]
@@ -64,12 +64,12 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - 25000002.5
+        - 1e9
     Spatial_Function:
       Type: constant
       Parameters: [1]
 Output:
-  Path: ../out_large/
+  Path: out-const/
   Tags:
     - Displacement
     - Velocity

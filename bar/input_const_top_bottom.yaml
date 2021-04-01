@@ -18,6 +18,7 @@ Material:
   Compute_From_Classical: true
   E: 3240000000.000000
   Gc: 500.000000
+  Is_Plane_Strain: True
   Bond_Potential:
     Type: 1
     Check_Sc_Factor: 10.0
@@ -33,7 +34,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - -0.9e12
+        - -0.804e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
@@ -44,7 +45,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - 0.9e12
+        - 0.804e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
