@@ -33,7 +33,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - -3.6e12
+        - -3.2232936689140184e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
@@ -44,12 +44,12 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - 3.6e12
+        - 3.2232936689140184e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
 Output:
-  Path: out_top_bottom_const-4/
+  Path: /work/diehlpk/PUM/bar/out_top_bottom_const-4/
   Tags:
     - Displacement
     - Velocity
