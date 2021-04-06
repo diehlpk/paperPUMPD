@@ -50,7 +50,7 @@ Force_BC:
       Type: constant
       Parameters: [1]
 Output:
-  Path: out_top_bottom_const-new/
+  Path: out_top_bottom_const/
   Tags:
     - Displacement
     - Velocity
