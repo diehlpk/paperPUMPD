@@ -53,7 +53,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - -1e9
+        - -1.7867193153291583e9
     Spatial_Function:
       Type: constant
       Parameters: [1]
@@ -64,7 +64,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - 1e9
+        - 1.7867193153291583e9
     Spatial_Function:
       Type: constant
       Parameters: [1]
