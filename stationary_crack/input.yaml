@@ -14,6 +14,7 @@ Mesh:
   Keep_Element_Conn: true
 Material:
   Type: RNPBond
+  Is_Plane_Strain: true
   Density: 1200.000000
   Compute_From_Classical: true
   E: 3240000000.000000

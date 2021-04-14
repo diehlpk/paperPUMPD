@@ -3,8 +3,8 @@ Model:
   Discretization_Type:
     Spatial: finite_difference
     Time: central_difference
-  Final_Time: 0.01
-  Time_Steps: 100000
+  Final_Time: 0.001
+  Time_Steps: 50000
   Horizon: 0.001000
   Horizon_h_Ratio: 8
 Policy:
@@ -14,6 +14,7 @@ Mesh:
   Keep_Element_Conn: true
 Material:
   Type: RNPBond
+  Is_Plane_Strain: true
   Density: 1200.000000
   Compute_From_Classical: true
   E: 3240000000.000000
@@ -53,23 +54,23 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - -200000000.0
+        - -2.09412091912276e9
     Spatial_Function:
       Type: constant
       Parameters: [1]
   Set_2:
     Location:
-      Rectangle: [5.012500e-02, 0.000000e+00, 1.000000e-01, 1.000000e-03]
+      Rectangle: [0.0500625, 0.000000e+00, 1.000000e-01, 1.000000e-03]
     Direction: [1]
     Time_Function:
       Type: linear
       Parameters:
-        - 200000000.0
+        - 2.09412091912276e9
     Spatial_Function:
       Type: constant
       Parameters: [1]
 Output:
-  Path: ../out_largei_2/
+  Path: out_fine/
   Tags:
     - Displacement
     - Velocity
@@ -79,7 +80,6 @@ Output:
     - Fixity
   Output_Interval: 1000
   Compress_Type: zlib
-  File_Format: legacy_vtk
-  Perform_FE_Out: false
+  Perform_FE_Out: true
 HPX:
   Partitions: 1
