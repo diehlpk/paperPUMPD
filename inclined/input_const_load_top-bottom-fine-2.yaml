@@ -6,7 +6,7 @@ Model:
   Final_Time: 0.001000
   Time_Steps: 50000
   Horizon: 0.001000
-  Horizon_h_Ratio: 4
+  Horizon_h_Ratio: 8
 Policy:
   Enable_PostProcessing: true
 Mesh:
@@ -14,6 +14,7 @@ Mesh:
   Keep_Element_Conn: true
 Material:
   Type: PDBond
+  Is_Plane_Strain: true
   Density: 1200.000000
   Compute_From_Classical: true
   E: 3240000000.000000
@@ -40,7 +41,7 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - -10000000000.0
+        - -4.738101864736988e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
@@ -51,12 +52,12 @@ Force_BC:
     Time_Function:
       Type: linear
       Parameters:
-        - 10000000000.0
+        - 4.738101864736988e12
     Spatial_Function:
       Type: constant
       Parameters: [1]
 Output:
-  Path: /work/diehlpk/PUM/inclined/out2/
+  Path: out_top_bottom_const-2/
   Tags:
     - Displacement
     - Velocity
