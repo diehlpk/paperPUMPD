@@ -1,0 +1,10 @@
+Output:
+  Path: .
+  Mesh: mesh_small_2
+  File_Format: vtu
+Domain: [ 0.04 , 0.01, 0.06, 0.03]
+  
+Horizon: 1.000000e-03
+Horizon_h_Ratio: 8
+Mesh_Type: uniform_tri
+Compress_Type: zlib
