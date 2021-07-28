@@ -1,4 +1,4 @@
-# paperPUMPD
+# A Fracture Multiscale Model for Peridynamic enrichment within the Partition of Unity Method: Part I
 
 ## Mesh
 

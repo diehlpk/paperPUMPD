@@ -45,7 +45,7 @@ Displacement_BC:
         - 1
     Spatial_Function:
       Type: constant
-      Parameters: [1]
+      Parameters: [1000.0]
   Set_2:
     Location:
       Displacement_from_pum: []
@@ -56,7 +56,7 @@ Displacement_BC:
         - 1
     Spatial_Function:
       Type: constant
-      Parameters: [1]
+      Parameters: [1000.0]
 Output:
   Path: out-const/
   Tags:
