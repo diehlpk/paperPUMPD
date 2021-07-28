@@ -1,4 +1,7 @@
 # A Fracture Multiscale Model for Peridynamic enrichment within the Partition of Unity Method: Part I
+[![DOI](https://zenodo.org/badge/308682043.svg)](https://zenodo.org/badge/latestdoi/308682043)
+
+
 
 ## Mesh
 
