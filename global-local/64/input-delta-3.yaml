@@ -1,0 +1,74 @@
+Model:
+  Dimension: 2
+  Discretization_Type:
+    Spatial: finite_difference
+    Time: central_difference
+  Final_Time: 0.001
+  Time_Steps: 50000
+  Horizon: 0.25
+  Horizon_h_Ratio: 4
+Policy:
+  Enable_PostProcessing: true
+Mesh:
+  File: pum_mesh_coupling_16_step_90_boundary_u_top_and_bot_boundary_f_top_and_bot_crack_growth_step_3.vtu  
+  Keep_Element_Conn: true
+  Load_PUM_data: Displacement
+Material:
+  Type: RNPBond
+  Is_Plane_Strain: true
+  Density: 1.200000e+2
+  Compute_From_Classical: true
+  E: 2.100000e+11
+  Gc: 1.500000e+00
+  Bond_Potential:
+    Type: 1
+    Check_Sc_Factor: 10.0
+    Irreversible_Bond_Fracture: true
+  No_Penetration: true
+  Influence_Function:
+    Type: 1
+Fracture:
+  Cracks:
+    Sets: 1
+    Set_1:
+      Orientation: 1
+      Line: [-0.1e00,4.96e+00, 7.4e00, 4.96e00]
+Displacement_BC:
+  Sets: 2
+  Set_1:
+    Location:
+      Displacement_from_pum: []
+    Direction: [2]
+    Time_Function:
+      Type: linear
+      Parameters:
+        - 1
+    Spatial_Function:
+      Type: constant
+      Parameters: [1000]
+  Set_2:
+    Location:
+      Displacement_from_pum: []
+    Direction: [1]
+    Time_Function:
+      Type: linear
+      Parameters:
+        - 1
+    Spatial_Function:
+      Type: constant
+      Parameters: [1000]
+Output:
+  Path: ./out-delta-3/
+  Tags:
+    - Displacement
+    - Velocity
+    - Force
+    - Damage_Z
+    - Neighbors
+    - Fixity
+    - Initial_Crack
+  Output_Interval: 500
+  Compress_Type: zlib
+  Perform_FE_Out: true
+HPX:
+  Partitions: 1
