@@ -35,3 +35,4 @@ Following [scripts](https://github.com/nonlocalmodels/HPCBuildInfrastructure) we
 ## Publications 
 
 * Birner, M., Diehl, P., Lipton, R., & Schweitzer, M. A. (2021). A Fracture Multiscale Model for Peridynamic enrichment within the Partition of Unity Method: Part I. arXiv preprint [arXiv:2108.02336](https://arxiv.org/abs/2108.02336).
+* Birner, Matthias, Patrick Diehl, Robert Lipton, and Marc Alexander Schweitzer. "A fracture multiscale model for peridynamic enrichment within the partition of unity method." Advances in Engineering Software 176 (2023): 103360. [Link](https://www.sciencedirect.com/science/article/abs/pii/S0965997822002617)
